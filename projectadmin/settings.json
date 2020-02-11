@@ -1,0 +1,229 @@
+{
+    "solasta20main": {
+        "slug": "solasta20main",
+        "table": {
+            "name": "solasta20main",
+            "pk": "sol_id",
+            "verbose": "Solasta Event Details"
+        },
+        "columns": [
+            {
+                "name": "sol_id",
+                "verbose": "ID",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "tech_cult",
+                "verbose": "Technical/Cultural",
+                "control": {
+                    "select": true,
+                    "options": [
+                        "Technical",
+                        {
+                            "Technical": "Cultural"
+                        }
+                    ]
+                },
+                "type": "varchar(10)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "category",
+                "verbose": "Category(eg:coding)",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "event",
+                "verbose": "Event(eg:Reverse Coding)",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "description",
+                "verbose": "Event Description",
+                "control": {
+                    "textarea": true,
+                    "editor": "tinymce"
+                },
+                "type": "varchar(700)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "rules",
+                "verbose": "Event Rules",
+                "control": {
+                    "textarea": true,
+                    "editor": "tinymce"
+                },
+                "type": "varchar(700)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "prizes",
+                "verbose": "Prize Worth",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": true,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false,
+            "oneToOne": {
+                "solasta20ci": "ci_id"
+            }
+        }
+    },
+    "solasta20ci": {
+        "slug": "solasta20ci",
+        "table": {
+            "name": "solasta20ci",
+            "pk": "ci_id",
+            "verbose": "Contact Info"
+        },
+        "columns": [
+            {
+                "name": "ci_id",
+                "verbose": "ID",
+                "control": {
+                    "text": true
+                },
+                "type": "int(11)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "con_name",
+                "verbose": "Name",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(20)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "con_num",
+                "verbose": "Contact Number",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(15)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            },
+            {
+                "name": "con_email",
+                "verbose": "Email",
+                "control": {
+                    "text": true
+                },
+                "type": "varchar(30)",
+                "allowNull": false,
+                "defaultValue": null,
+                "listview": {
+                    "show": true
+                },
+                "editview": {
+                    "show": true
+                }
+            }
+        ],
+        "mainview": {
+            "show": true
+        },
+        "listview": {
+            "order": {},
+            "page": 25
+        },
+        "editview": {
+            "readonly": false
+        }
+    }
+}
