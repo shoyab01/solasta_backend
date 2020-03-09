@@ -61,3 +61,7 @@ To create a project:
     C:\solasta_backend>node node_modules/express-admin/app.js projectadmin/
     
 Then load http://localhost:3000/ in your browser to access the app
+
+# Database Schema(MySQL)
+
+https://github.com/shoyab01/solasta_backend/blob/master/solasta_db.sql
