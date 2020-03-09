@@ -5,7 +5,7 @@ var session = require('express-session');
 //var sanitizer = require('sanitizer');
 const bodyParser = require('body-parser');
 
-//mysql://bc2e44d8745032:88021a23@eu-cdbr-west-02.cleardb.net/heroku_8fbefb59a0dd04a?reconnect=true
+//mysql://b3832e8c1192ee:03e8efee@eu-cdbr-west-02.cleardb.net/heroku_4e31ecd5ff8d061?reconnect=true
 
 
 /*const conn = sql.createConnection({
@@ -17,9 +17,9 @@ const bodyParser = require('body-parser');
 
 const conn = sql.createConnection({
 	host:'eu-cdbr-west-02.cleardb.net',
-	user:'b679633c5b39cc',
-	password:'743c7670',
-	database:'heroku_12760bdd03aedce'	
+	user:'b3832e8c1192ee',
+	password:'03e8efee',
+	database:'heroku_4e31ecd5ff8d061'	
 });
 
 /* GET home page. */
