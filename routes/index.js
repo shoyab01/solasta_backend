@@ -17,9 +17,9 @@ const bodyParser = require('body-parser');
 
 const conn = sql.createConnection({
 	host:'eu-cdbr-west-02.cleardb.net',
-	user:'bc2e44d8745032',
-	password:'88021a23',
-	database:'heroku_8fbefb59a0dd04a'	
+	user:'b679633c5b39cc',
+	password:'743c7670',
+	database:'heroku_12760bdd03aedce'	
 });
 
 /* GET home page. */
