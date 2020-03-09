@@ -62,5 +62,40 @@ router.get('/event_details/:id/:cat', function(req, res, next) {
 	}
 })
 
+router.get('/event_data/:id2', function(req, res, next){
+	if(req.params.id2 == 0)
+	{
+		conn.query(`select * from solasta20main where tech_cult = 'Technical'`, function(err, result){
+			if(err) throw err;
+			if(result.length !== 0)
+			{
+				res.send(result);
+			}
+			else
+			{
+				res.send(404);
+			}
+		});
+	}
+	else if(req.params.id2 == 1)
+	{
+		conn.query(`select * from solasta20main where tech_cult = 'Cultural'`, function(err, result){
+			if(err) throw err;
+			if(result.length !== 0)
+			{
+				res.send(result);
+			}
+			else
+			{
+				res.send(404);
+			}
+		});
+	}
+	else
+	{
+		res.send(404);
+	}
+});
+
 
 module.exports = router;
